@@ -76,6 +76,9 @@ Es un espacio personal de aprendizaje donde practiqué conceptos base de Godot, 
 
 ## License
 
-This project is **not open-source**.
+© 2026 Verenisse Famara Cáceres Pérez. All Rights Reserved.
 
-All rights are reserved by the author. See the [LICENSE](LICENSE) file for details.
+This project is shared publicly for **portfolio and recruitment purposes only**.
+Viewing the source code is permitted; copying, modifying, distributing, or using
+it for any other purpose is strictly prohibited without prior written permission
+from the author. See [LICENSE](LICENSE) for full terms.
