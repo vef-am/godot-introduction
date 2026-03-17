@@ -9,6 +9,7 @@ This repository contains my practice project files from the **Godot 101 – Game
 
 It is a personal learning workspace where I explored core Godot concepts such as:
 
+- Set up and navigate the Godot editor
 - Scene and node structure
 - Scripting with GDScript
 - Materials and basic visuals
@@ -53,6 +54,7 @@ Este repositorio contiene mis archivos de práctica del curso **Godot 101 – Ga
 
 Es un espacio personal de aprendizaje donde practiqué conceptos base de Godot, incluyendo:
 
+- Configurar y navegar el editor de Godot
 - Estructura de escenas y nodos
 - Scripting con GDScript
 - Materiales y visuales básicos
