@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bwyptc281s380"]
+
+[ext_resource type="Texture2D" uid="uid://cd3jjm22a4e7d" path="res://Sprites/Player.png" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cfykowxjsrpgv" path="res://Scenes/coin.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=2013144703]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=231219706]
+position = Vector2(349, 258.62427)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1230136569]
+position = Vector2(261, 258.62427)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2068154674]
+position = Vector2(442, 258.62427)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1000140417]
+position = Vector2(407, 174.62425)
+rotation = 0.7853982
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=938254183]
+position = Vector2(407.99997, 351)
+rotation = 2.3561945
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=159959359]
+position = Vector2(284.00003, 348)
+rotation = 3.8574986
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1083785167]
+position = Vector2(290.00003, 172.99998)
+rotation = 5.5635996
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_ig7tw")
+
+[node name="Coin" parent="." unique_id=1701892034 instance=ExtResource("2_0xm2m")]
+position = Vector2(258, 72)
+
+[node name="Coin2" parent="." unique_id=1178311084 instance=ExtResource("2_0xm2m")]
+position = Vector2(356, 70)
+
+[node name="Coin3" parent="." unique_id=879066319 instance=ExtResource("2_0xm2m")]
+position = Vector2(468, 67)
+
+[node name="Coin4" parent="." unique_id=1645465676 instance=ExtResource("2_0xm2m")]
+position = Vector2(574, 67)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=722826922]
+position = Vector2(577, 322)

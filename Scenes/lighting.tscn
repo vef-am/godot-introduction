@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bqg1ml35766lc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_1hnmf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_wekp6"]
+
+[node name="Main" type="Node3D" unique_id=1962906656]
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=608136840]
+transform = Transform3D(34.435825, 0, 0, 0, -1.3019544e-06, 6.7401195, 0, -29.785244, -2.9461995e-07, 0, 0, 0)
+mesh = SubResource("QuadMesh_1hnmf")
+
+[node name="Sphere" type="MeshInstance3D" parent="." unique_id=1006950291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49280882, 0)
+mesh = SubResource("SphereMesh_wekp6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=454005726]
+transform = Transform3D(0.94951314, -0.27183264, 0.15662646, 0, 0.49924406, 0.86646146, -0.3137273, -0.82271653, 0.47403878, 0, 2.6090317, 0)
+visible = false
+light_color = Color(0.99838537, 0.9595347, 0.8518769, 1)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1931700676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4467812, 0.5980921, -0.66609097)
+light_color = Color(0.05000007, 1, 0, 1)
+light_energy = 3.815
+shadow_enabled = true
+omni_range = 3.962406
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=862603254]
+transform = Transform3D(1, 0, 0, 0, 0.5054617, 0.8628491, 0, -0.8628491, 0.5054617, 0, 3.6495495, 1.9109607)
+light_color = Color(0.83515495, 0.16517687, 0.8491665, 1)
+light_energy = 14.075
+shadow_enabled = true
+spot_range = 6.263888

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cq55cif1evcuk"]
+
+[ext_resource type="Material" uid="uid://i4ao0ogf0o08" path="res://Materials/my_first_material.tres" id="1_g22v7"]
+[ext_resource type="Material" uid="uid://uq1npd7fom14" path="res://Materials/purple.tres" id="2_5o3kl"]
+[ext_resource type="Material" uid="uid://bc6ptxtsg3p0q" path="res://Materials/red.tres" id="3_7lhb3"]
+[ext_resource type="Texture2D" uid="uid://cd3jjm22a4e7d" path="res://Sprites/Player.png" id="4_7lhb3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mac0m"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_5o3kl"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_o1qma"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_buu1m"]
+albedo_color = Color(0, 0.65, 0.021666646, 1)
+metallic = 0.91
+roughness = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1qma"]
+albedo_texture = ExtResource("4_7lhb3")
+
+[node name="Main" type="Node3D" unique_id=1083148846]
+
+[node name="Snowman" type="Node3D" parent="." unique_id=1023218098]
+
+[node name="Arms" type="MeshInstance3D" parent="Snowman" unique_id=1721255298]
+transform = Transform3D(1.9026879, 0, 0, 0, 0.20302393, 0, 0, 0, 0.18257485, -0.024238586, 0.9358692, 0)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("BoxMesh_mac0m")
+
+[node name="Legs" type="MeshInstance3D" parent="Snowman" unique_id=293582502]
+transform = Transform3D(1.4772788, 0, 0, 0, 1.4772788, 0, 0, 0, 1.4772788, 0, 0, 0)
+mesh = SubResource("SphereMesh_5o3kl")
+surface_material_override/0 = ExtResource("1_g22v7")
+
+[node name="Torso" type="MeshInstance3D" parent="Snowman" unique_id=1094946851]
+transform = Transform3D(1.086662, 0, 0, 0, 1.086662, 0, 0, 0, 1.086662, 0, 0.8607515, 0)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_5o3kl")
+
+[node name="Head" type="MeshInstance3D" parent="Snowman" unique_id=427446874]
+transform = Transform3D(0.7537909, 0, 0, 0, 0.7537909, 0, 0, 0, 0.7537909, 0, 1.5968314, 0)
+material_override = ExtResource("1_g22v7")
+mesh = SubResource("SphereMesh_5o3kl")
+
+[node name="Puerple" type="MeshInstance3D" parent="." unique_id=1869893705]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.8205028, -4.7683716e-07, -5.98622)
+material_override = ExtResource("2_5o3kl")
+mesh = SubResource("SphereMesh_o1qma")
+
+[node name="Green" type="MeshInstance3D" parent="." unique_id=485704227]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.5192871, -4.7683716e-07, -5.98622)
+mesh = SubResource("SphereMesh_o1qma")
+surface_material_override/0 = SubResource("StandardMaterial3D_buu1m")
+
+[node name="Red" type="MeshInstance3D" parent="." unique_id=894748037]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.671659, -4.7683716e-07, -5.98622)
+material_override = ExtResource("3_7lhb3")
+mesh = SubResource("SphereMesh_o1qma")
+
+[node name="Textured" type="MeshInstance3D" parent="." unique_id=1286326894]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.9759965, -4.7683716e-07, -5.98622)
+mesh = SubResource("SphereMesh_o1qma")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1qma")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=110416683]
+transform = Transform3D(1, 0, 0, 0, 0.7558534, 0.6547408, 0, -0.6547408, 0.7558534, 0, 3.5639496, 3.0319366)
+fov = 65.843025
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=1558084371]
